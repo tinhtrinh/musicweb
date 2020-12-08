@@ -2,5 +2,172 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: #333333;
+    width: 1440px;
+    height: 100vh;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+/* App Submenu Bar Navigation */
+.header {
+    position: absolute;
+    width: 1440px;
+    height: 69px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background-color: #000000;
+    margin: 0 auto;
+}
+
+.logo {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 25px;
+    top: 13px;
+}
+
+.name {
+    position: absolute;
+    width: fit-content;
+    height: 22px;
+    left: 57px;
+    top: calc(42% - 22px/2);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.dn-btn {
+    position: absolute;
+    width: 120px;
+    height: 39px;
+    border-radius: 5px;
+    left: 1144px;
+    top: 11px;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dk-btn {
+    position: absolute;
+    width: 120px;
+    height: 39px;
+    border-radius: 5px;
+    left: 1284px;
+    top: 11px;
+    background-color: #3FA2F7;
+    font-size: 15px;
+}
+
+.search {
+    position: absolute;
+    width: 400px;
+    height: 36px;
+    left: 520px;
+    top: 12px;
+}
+
+.s-icon {
+    position: absolute;
+    width: 34px;
+    height: 33.3px;
+    border-right: none;
+    border-radius:5px 0 0 5px;
+    background-color: white;
+    text-align: center;
+    vertical-align: baseline;
+    padding: 8px;
+    top: 1.3px;
+}
+
+.s-input {
+    position: absolute;
+    width: 366px;
+    height: 36px;
+    border-left: none;
+    border-radius:0 5px 5px 0;
+    left: 34px;
+}
+
+.side-bar {
+    position: absolute;
+    width: 300px;
+    height: 678px;
+    left: 40px;
+    top: 109px;
+    background: #000000;
+    border: 1px solid #FFFFFF;
+}
+
+.side-item {
+    list-style: none;
+    height: 51px;
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+}
+
+.footer {
+    position: absolute;
+    width: 1442px;
+    height: 180px;
+    left: 40px;
+    top: 844px;
+    background: #000000;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+.copy-right {
+    position: absolute;
+    width: fit-content;
+    height: 21px;
+    top: 150px;
+    left: 639px;
+    text-decoration: none;
+}
+
+.law {
+    position: absolute;
+    width: fit-content;
+    height: 21px;
+    top: 10px;
+    left: 28px;
+    text-decoration: none;
+}
+
+.contact {
+    position: absolute;
+    width: fit-content;
+    height: 21px;
+    left: 1130px;
+    top: 10px;
+    text-decoration: none;
+}
+
+.about {
+    position: absolute;
+    width: fit-content;
+    height: 21px;
+    left: 1313px;
+    top: 10px;
+    text-decoration: none;
 }
