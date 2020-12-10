@@ -8,7 +8,7 @@
 body {
     background: #333333;
     width: 1440px;
-    height: 100vh;
+    margin: auto;
 }
 
 .text {
@@ -17,6 +17,14 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #ffffff;
+    text-decoration: none;
+}
+
+.img-size {
+    width: 34px;
+    height: 34px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 /* App Submenu Bar Navigation */
@@ -32,10 +40,9 @@ body {
     margin: 0 auto;
 }
 
+
 .logo {
     position: absolute;
-    width: 34px;
-    height: 34px;
     left: 25px;
     top: 13px;
 }
@@ -46,13 +53,8 @@ body {
     height: 22px;
     left: 57px;
     top: calc(42% - 22px/2);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
     display: flex;
     align-items: center;
-    color: #ffffff;
 }
 
 .dn-btn {
@@ -112,7 +114,6 @@ body {
     position: absolute;
     width: 300px;
     height: 678px;
-    left: 40px;
     top: 109px;
     background: #000000;
     border: 1px solid #FFFFFF;
@@ -122,14 +123,13 @@ body {
     list-style: none;
     height: 51px;
     border: 1px solid #FFFFFF;
-    padding: 5px;
+    padding: 7px 20px 7px 25px;
 }
 
 .footer {
     position: absolute;
     width: 1442px;
     height: 180px;
-    left: 40px;
     top: 844px;
     background: #000000;
     border: 1px solid #FFFFFF;
@@ -142,7 +142,6 @@ body {
     height: 21px;
     top: 150px;
     left: 639px;
-    text-decoration: none;
 }
 
 .law {
@@ -151,7 +150,6 @@ body {
     height: 21px;
     top: 10px;
     left: 28px;
-    text-decoration: none;
 }
 
 .contact {
@@ -160,7 +158,6 @@ body {
     height: 21px;
     left: 1130px;
     top: 10px;
-    text-decoration: none;
 }
 
 .about {
@@ -169,5 +166,4 @@ body {
     height: 21px;
     left: 1313px;
     top: 10px;
-    text-decoration: none;
 }
