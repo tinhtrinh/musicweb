@@ -11,6 +11,13 @@ body {
     margin: auto;
 }
 
+.btn {
+    width: 120px;
+    height: 39px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
 .text {
     font-style: normal;
     font-weight: 500;
@@ -20,11 +27,16 @@ body {
     text-decoration: none;
 }
 
-.img-size {
+.icon-size {
     width: 34px;
     height: 34px;
     vertical-align: middle;
     margin-right: 10px;
+}
+
+.song-img-size {
+    width: 90px;
+    height: 90px;
 }
 
 /* App Submenu Bar Navigation */
@@ -59,25 +71,23 @@ body {
 
 .dn-btn {
     position: absolute;
-    width: 120px;
-    height: 39px;
-    border-radius: 5px;
     left: 1144px;
     top: 11px;
-    font-size: 15px;
     background-color: #ffffff;
     color: #000000;
 }
 
 .dk-btn {
     position: absolute;
-    width: 120px;
-    height: 39px;
-    border-radius: 5px;
     left: 1284px;
     top: 11px;
     background-color: #3FA2F7;
-    font-size: 15px;
+}
+
+.ct-btn {
+    position: absolute;
+    left: 45%;
+    background-color: #3FA2F7;
 }
 
 .search {
@@ -126,6 +136,14 @@ body {
     padding: 7px 20px 7px 25px;
 }
 
+.side-item:hover {
+    background-color: #3FA2F7;
+}
+
+.side-item:focus {
+    background-color: #3FA2F7;
+}
+
 .footer {
     position: absolute;
     width: 1442px;
@@ -166,4 +184,15 @@ body {
     height: 21px;
     left: 1313px;
     top: 10px;
+}
+
+.song-container {
+    list-style: none;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: auto;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 14px;
 }
