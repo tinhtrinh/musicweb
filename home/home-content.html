@@ -7,42 +7,43 @@
     <title>Document</title>
 </head>
 <body style="width: 1090px">
-    <div>
-        <button class="text btn ct-btn" style="width: fit-content; margin:auto">Được nghe nhiều</button><br><br>
-        <ul>
-            <a href="#" class="text"><li class="song-container">
-                <img src="./song/image 19.png" alt="song-img" class="song-img-size"><br>
-                1.Hoa Hải Đường <br>
-                Jack
-            </li></a>
-            <a href="#" class="text"><li class="song-container">
-                <img src="./song/image 19.png" alt="song-img" class="song-img-size"><br>
-                1.Hoa Hải Đường <br>
-                Jack
-            </li></a>
-            <a href="#" class="text"><li class="song-container">
-                <img src="./song/image 19.png" alt="song-img" class="song-img-size"><br>
-                1.Hoa Hải Đường <br>
-                Jack
-            </li></a>
-            <a href="#" class="text"><li class="song-container">
-                <img src="./song/image 19.png" alt="song-img" class="song-img-size"><br>
-                1.Hoa Hải Đường <br>
-                Jack
-            </li></a>
-            <a href="#" class="text"><li class="song-container">
-                <img src="./song/image 19.png" alt="song-img" class="song-img-size"><br>
-                1.Hoa Hải Đường <br>
-                Jack
-            </li></a>
-            <a href="#" class="text"><li class="song-container">
-                <img src="./song/image 19.png" alt="song-img" class="song-img-size"><br>
-                1.Hoa Hải Đường <br>
-                Jack
-            </li></a>
-        </ul>
+    <div class="slider">
+        <div class="slides">
+          <div id="slide-1">
+            1
+          </div>
+          <div id="slide-2">
+            2
+          </div>
+          <div id="slide-3">
+            3
+          </div>
+          <div id="slide-4">
+            4
+          </div>
+        </div>
+
+        <a href="#slide-1">1</a>
+        <a href="#slide-2">2</a>
+        <a href="#slide-3">3</a>
+        <a href="#slide-4">4</a>
     </div>
 
-    <script src="./jquery.js"></script>
+    <ul style="list-style: none;" id="group">
+        <li>
+            <button class="text btn ct-btn" style="width: fit-content; margin:auto">Được nghe nhiều</button><br><br>
+            <ul>
+                <a href="#" class="text"><li class="song-container">
+                    <img src="./song/image 19.png" alt="song-img" class="song-img-size"><br>
+                    1.Hoa Hải Đường <br>
+                    Jack
+                </li></a>
+            </ul>
+        </li>
+    </ul>
+        
+
+    <script src="../jquery.js"></script>
+    <script src="./home-content.js"></script>
 </body>
 </html>

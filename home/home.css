@@ -50,6 +50,7 @@ header {
     bottom: 0%;
     background-color: #000000;
     margin: 0 auto;
+    border: 1px solid #FFFFFF;
 }
 
 
@@ -124,7 +125,13 @@ main {
     display: flex; 
     flex-direction: row; 
     position: absolute; 
-    top: 109px;
+    top: 69px;
+}
+
+iframe {
+    width: 1090px; 
+    margin-left: 45px;
+    margin-top: 40px;
 }
 
 .side-bar {
@@ -142,10 +149,10 @@ main {
 }
 
 .side-item:hover {
-    background-color: #3FA2F7;
+    background: #3FA2F7;
 }
 
-.side-item:focus {
+a:focus .side-item {
     background-color: #3FA2F7;
 }
 
@@ -201,4 +208,146 @@ footer {
     height: 21px;
     left: 1313px;
     top: 10px;
+}
+
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+
+.slider {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+  
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    /*
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+    */
+}
+
+.slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 300px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #eee;
+    
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    transform: translate3d(-50%,-40%);
+    transition: 0.5s;
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.slides > div:last-child {
+    animation-name: tostart, snap;
+}
+  
+.author-info {
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.author-info a {
+    color: white;
+}
+  
+.slider > a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #3FA2F7;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    top: -40px;
+}
+
+.slider > a:active {
+    top: 41px;
+}
+
+.slider > a:focus {
+    background: #000;
 }
