@@ -22,7 +22,7 @@ var menus = [
     {
         name: "Khu vực",
         src: "../asset/icon/flag.svg",
-        href: "../project_country/Country.html"
+        href: "/project__country/Country.html"
     },
     {
         name: "Cá nhân",

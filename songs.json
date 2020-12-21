@@ -6,9 +6,14 @@
             "image": "../asset/content/img (5).svg"
         },
         {
-            "name": "Hoa Hải Đường",
-            "singer": "Jack",
+            "name": "Kasui",
+            "singer": "Eito",
             "image": "../asset/content/img (9).svg"
+        },
+        {
+            "name": "SkyFall",
+            "singer": "Adelle",
+            "image": "../asset/content/img (13).svg"
         }
     ]
 }

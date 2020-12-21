@@ -1,19 +1,19 @@
- window.onscroll = () =>  {myFunction()};
-
-// Get the navbar
-var navbar = document.getElementById("navbar");
-
-var footer = document.getElementById("playMusicBar")
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-const myFunction = () => {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-    footer.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-    footer.classList.remove("sticky")
-  }
-}
+$(document).ready(() => {
+    $.getJSON("./Country.json", (data)=> {
+            var arr = data.arr;
+  
+            $("#wrapper").html(arr.map(i => {
+                var innerHTML = '';
+                innerHTML+='<div id="title"> <h1>' + i.title__left + '</h1> <p>' + i.title__right + '</p></div>';
+                innerHTML+='<div id="content__row"><div id="item">';
+                innerHTML+='<img src="' + i.src1 + '"/><h4>' + i.title1 + '</h4> <p>';
+                innerHTML+='</p></div><div id="item"><img src="' + i.src2 + '"/><h4>' + i.title2 + '</h4> <p>' + i.author2 + '</p></div>';
+                innerHTML+='<div id="item"><img src="' + i.src3 + '"/><h4>' + i.title3 + '</h4> <p>' + i.author3 + '</p></div>';
+                innerHTML+='<div id="item"><img src="' + i.src4 + '"/><h4>' + i.title4 + '</h4> <p>' + i.author4 + '</p></div></div>';
+                return innerHTML;
+            }));
+        }
+    ).fail(function(){
+        console.log("An error has occurred.")
+    });
+  });
