@@ -3,7 +3,7 @@
         {
             "name": "Hoa Hải Đường",
             "singer": "Jack",
-            "image": "./asset/content/img  (1).svg"
+            "image": "../asset/content/img (1).svg"
         }
     ]
 }
