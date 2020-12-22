@@ -11,8 +11,10 @@ hr {
     margin: 0 auto;
     width:40% ;
     background-color:#242424;
-    height: 600px;
+    height: 640px;
     min-width: 300px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 body {
@@ -47,12 +49,16 @@ main{
 }
 
 button {
-    width: 100px;
-    height: 30px;
+    width: 130px;
+    height: 40px;
+    display: block;
     margin: 0 auto;
     border-radius: 15px;
-    font-size: 22px;
+    border:none;
+    font-size: 20px;
     text-align: center;
+    color: white;
+    font-weight: bold;
 }
 
 .signup {
@@ -75,4 +81,14 @@ button {
 }
 .agree {
     color: #a9f9dc;
+}
+.avatar_icon {
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    top: 840px;
 }
