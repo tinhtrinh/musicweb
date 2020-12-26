@@ -33,13 +33,13 @@
             <tr>
                 <td colspan="2">
                     <label>Tên</label><br/>
-                    <input type="text" class="radius dienthongtin" placeholder="Tên"></input>
+                    <input type="text" class="radius dienthongtin" placeholder="Tên" id="tdk"></input>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
                     <label>Mật Khẩu</label><br/>
-                    <input type="password" class="radius dienthongtin" placeholder="Mật khẩu" ></input>
+                    <input type="password" class="radius dienthongtin" placeholder="Mật khẩu" id="mk"></input>
                 </td>
             </tr>
             <tr>
@@ -52,13 +52,15 @@
                 <td colspan="2"><input type="checkbox" name="agree" id="agree" class="check"/><label for="agree"  class="agree">Đồng ý</label></td>
             </tr>
             <tr>
-                <td><a href="../ca-nhan/ca-nhan.html"><button class="signup">Đăng ký</button></a></td>
+                <td><button class="signup" id="dk">Đăng ký</button></td>
                 <td><a href="../home/home.html"><button class="cancel">Hủy</button></a></td>
             </tr>
         </table>
     </div>
     </main>
 
+    <script src="../jquery.js"></script>
+    <script src="./dangki.js"></script>
 </body>
 </html>
 
