@@ -33,7 +33,7 @@ $(document).ready(function () {
     
     $("#end").click(function (e) { 
         e.preventDefault();
-        $("#playMusicBar").css("visubility", "hidden");
+        $("#playMusicBar").css("visibility", "hidden");
     });
 
     $("#s-input").keyup(function(e){ 
