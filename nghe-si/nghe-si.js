@@ -1,63 +1,13 @@
-var artists = [
-    {
-        id: "td-nghesi-1",
-        name: "Adam Levine",
-        followers: 100000,
-        followed: false,
-        avatar: "./avatar.png"
-    },
-    {
-        id: "td-nghesi-2",
-        name: "Son Tung MTP",
-        followers: 10000000,
-        followed: true,
-        avatar: "./avatar.png"
-    },
-    {
-        id: "td-nghesi-3",
-        name: "Avicii",
-        followers: 100000,
-        followed: false,
-        avatar: "./avatar.png"
-    },
-    {
-        id: "td-nghesi-4",
-        name: "Ed Sheeran",
-        followers: 100000,
-        followed: false,
-        avatar: "./avatar.png"
-    },
-    {
-        id: "td-nghesi-5",
-        name: "K-ICM",
-        followers: 100000,
-        followed: false,
-        avatar: "./avatar.png"
-    },
-    {
-        id: "td-nghesi-6",
-        name: "Only C",
-        followers: 10000000,
-        followed: false,
-        avatar: "./avatar.png"
-    },
-    {
-        id: "td-nghesi-7",
-        name: "Dalab",
-        followers: 100000,
-        followed: false,
-        avatar: "./avatar.png"
-    },
-    {
-        id: "td-nghesi-8",
-        name: "Wiz Khalifa",
-        followers: 100000,
-        followed: true,
-        avatar: "./avatar.png"
-    },
-]
+$(document).ready(() => {
 
-$(document).ready(function () {
+    $.getJSON("artists.json", (data) => {
+        var artists = data.artists;
+        output(artists);
+    })
+
+});
+
+function output(artists) {
     for (var i = 0; i < artists.length/4 + 1; i++) {
         var innerHTML = '';
         innerHTML += '<tr id="tr-' + i + '">';
@@ -77,9 +27,8 @@ $(document).ready(function () {
 
         $('#tr-' + (parseInt(i / 4))).html($('#tr-' + (parseInt(i / 4))).html() + innerHTML);
         i++;
-    })
-    
-});
+    });
+}
 
 function toString(follower) {
     var result = follower;
