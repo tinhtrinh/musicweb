@@ -31,4 +31,13 @@ $(document).ready(function () {
         return '<a href="'+ menu.href +'" class="text" target="home-iframe"><li class="side-item"><img src="' + menu.src + '" alt="home" class="icon-size">' + menu.name +'</li></a>'
     }).join("")+ '<a href="../dang_nhap/login.html" class="text"><li class="side-item"><img src="../asset/icon/user.svg" class="icon-size">Cá Nhân</li></a>');
     
+    $("#end").click(function (e) { 
+        e.preventDefault();
+        $("#playMusicBar").css("visubility", "hidden");
+    });
+
+    $("#s-input").keyup(function(e){ 
+        var code = e.key;
+        if(code==="Enter") $("#iframe").attr("src", "../result/result.html");
+    });
 });

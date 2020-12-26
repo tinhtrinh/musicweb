@@ -16,7 +16,7 @@
 
         <div class="search">
             <i class="fa fa-search s-icon"></i>
-            <input type="text" class="s-input" placeholder="Tìm kiếm...">
+            <input type="text" class="s-input" placeholder="Tìm kiếm..." id="s-input">
         </div>
         
         <a href="../dang_nhap/login.html"><button class="dn-btn btn text">Đăng nhập</button></a>
@@ -25,8 +25,30 @@
 
     <main>
         <ul class="side-bar" id="side-bar"></ul>
-        <iframe src="./home-content.html" name="home-iframe" frameborder="0"></iframe>
+        <iframe src="./home-content.html" name="home-iframe" id="iframe" frameborder="0"></iframe>
     </main>
+
+    <footer id="playMusicBar">
+        <div id="musicControl">
+          <img src="../asset/button/repeatButton.svg" alt="" />
+          <img src="../asset/button/previousButton.svg" alt="" />
+          <img src="../asset/button/playButton.svg" id="playButton" />
+          <img src="../asset/button/nextButton.svg" alt="" />
+          <img src="../asset/button/shuffleButton.svg" alt="" />
+        </div>
+        <div id="musicContent">
+          <img src="../asset/button/coverImage.svg" alt="" />
+          <div id="musicContent__text">
+            <h3>The Everlasting Guilty Crown (Guilty Crown Opening)</h3>
+            <p>EGOIST</p>
+          </div>
+        </div>
+        <div id="musicTime">
+          <p>3:07 / 5:22</p>
+        </div>
+
+        <i class="fa fa-times-circle" style="color: white;" id="end"></i>
+      </footer>
 
     <script src="../jquery.js"></script>
     <script src="./home.js"></script>

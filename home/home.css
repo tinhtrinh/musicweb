@@ -50,7 +50,6 @@ header {
     bottom: 0%;
     background-color: #000000;
     margin: 0 auto;
-    border: 1px solid #FFFFFF;
 }
 
 
@@ -137,14 +136,14 @@ iframe {
 .side-bar {
     width: 300px;
     height: 678px;
-    background: #000000;
-    border: 1px solid #FFFFFF;
+    background: rgba(0, 0, 0, 0.75);
+    /*border: 1px solid #FFFFFF;*/
 }
 
 .side-item {
     list-style: none;
     height: 51px;
-    border: 1px solid #FFFFFF;
+    /*border: 1px solid #FFFFFF;*/
     padding: 7px 20px 7px 25px;
 }
 
@@ -169,13 +168,16 @@ a:focus .side-item {
 }
 
 footer {
-    position: absolute;
-    width: 1442px;
-    height: 180px;
-    top: 747px;
-    background: #000000;
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 1);
+    width: 1440px;
+    height: 80px;
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+    border: 1px solid #fff;
+    justify-content: space-between;
 }
 
 .copy-right {
