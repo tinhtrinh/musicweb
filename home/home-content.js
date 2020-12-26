@@ -12,4 +12,10 @@ $(document).ready(function () {
     ).fail(function(){
         console.log("An error has occurred.")
     });
+
+    $("#slides").jcarousel();
+    $('.jcarousel').jcarouselAutoscroll({
+        interval: 1000,
+        target: '+=1'
+    })
 });

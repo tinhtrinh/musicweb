@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng Kí</title>
-    <link rel="stylesheet" href="../home//home.css">
+    <link rel="stylesheet" href="../home/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dangki.css"/>
 </head>
 <body>
     <header>
-        <img src="../asset/icon/key.svg" alt="logo" class="logo icon-size">
-        <h1 class="text name">Hợp Âm</h1>
+        <a href="../home/home.html">
+            <img src="../asset/icon/key.svg" alt="logo" class="logo icon-size">
+            <h1 class="text name">Hợp Âm</h1>
+        </a>
 
         <div class="search">
             <i class="fa fa-search s-icon"></i>
             <input type="text" class="s-input" placeholder="Tìm kiếm...">
         </div>
         
-        <button class="dn-btn btn text">Đăng nhập</button>
-        <button class="dk-btn btn text">Đăng Ký</button>
+        <a href="../dang_nhap/login.html"><button class="dn-btn btn text">Đăng nhập</button></a>
+        <a href="../dang_ki/dangki.html"><button class="dk-btn btn text">Đăng Ký</button></a>
     </header>
+
     <main>
         <div class="dk_div">
         <table>
@@ -29,14 +32,14 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <label>Name</label><br/>
-                    <input type="text" class="radius dienthongtin" placeholder="Name"></input>
+                    <label>Tên</label><br/>
+                    <input type="text" class="radius dienthongtin" placeholder="Tên"></input>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <label>Password</label><br/>
-                    <input type="password" class="radius dienthongtin" placeholder="Password" ></input>
+                    <label>Mật Khẩu</label><br/>
+                    <input type="password" class="radius dienthongtin" placeholder="Mật khẩu" ></input>
                 </td>
             </tr>
             <tr>
@@ -46,23 +49,16 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2"><input type="checkbox" name="agree" id="agree" class="check"/><label for="agree"  class="agree">  I agree </label></td>
+                <td colspan="2"><input type="checkbox" name="agree" id="agree" class="check"/><label for="agree"  class="agree">Đồng ý</label></td>
             </tr>
             <tr>
-                <td><button class="signup">Sign Up</button></td>
-                <td><button class="cancel">Cancel</button></td>
+                <td><button class="signup">Đăng ký</button></td>
+                <td><button class="cancel">Hủy</button></td>
             </tr>
         </table>
     </div>
     </main>
 
-    <footer>
-        <a href="#" class="law text">Chính sách</a>
-        <a href="#" class="contact text">Liên hệ</a>
-        <a href="#" class="about text">Về chúng tôi</a>
-        <a href="#" class="copy-right text">Thông tin bản quyền</a>
-    </footer>
-    
 </body>
 </html>
 

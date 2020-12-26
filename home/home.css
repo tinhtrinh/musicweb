@@ -304,15 +304,15 @@ footer {
     font-size: 100px;
     transform: translate3d(-50%,-40%);
     transition: 0.5s;
-    animation-name: tonext, snap;
+    /* animation-name: tonext, snap;
     animation-timing-function: ease;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
-.slides > div:last-child {
+/* .slides > div:last-child {
     animation-name: tostart, snap;
-}
+} */
   
 .author-info {
     background: rgba(0, 0, 0, 0.75);
