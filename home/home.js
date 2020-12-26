@@ -7,7 +7,7 @@ var menus = [
     {
         name: "Bảng Xếp Hạng",
         src: "../asset/icon/bar-chart.svg",
-        href: "./ca-nhan/ca-nhan.html"
+        href: "../bxh/bxh.html"
     },
     {
         name: "Nghệ Sĩ",
@@ -23,17 +23,12 @@ var menus = [
         name: "Khu vực",
         src: "../asset/icon/flag.svg",
         href: "/project__country/Country.html"
-    },
-    {
-        name: "Cá nhân",
-        src: "../asset/icon/user.svg",
-        href: "../ca-nhan/ca-nhan.html"
     }
 ]
 
 $(document).ready(function () {
     $("#side-bar").html(menus.map(menu => {
         return '<a href="'+ menu.href +'" class="text" target="home-iframe"><li class="side-item"><img src="' + menu.src + '" alt="home" class="icon-size">' + menu.name +'</li></a>'
-    }).join(""));
+    }).join("")+ '<a href="../dang_nhap/login.html" class="text"><li class="side-item"><img src="../asset/icon/user.svg" class="icon-size">Cá Nhân</li></a>');
     
 });
