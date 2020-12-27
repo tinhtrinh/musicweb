@@ -31,13 +31,19 @@ main{
   height: 600px;
 }
 
-.content__row {
+#wrapper {
+  width: 100%;
+}
+
+#content__row {
+  width: 100%;
   padding: 20px 70px;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
 
-.title {
+#title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -46,7 +52,7 @@ main{
   color: #fff;
 }
 
-.item {
+#item {
   padding-left: 40px;
   padding-right: 40px;
   display: flex;
@@ -55,7 +61,7 @@ main{
   color: #fff;
 }
 
-.item > h4 {
+#item > h4 {
   margin-top: 20px;
   margin-bottom: 12px;
 }
@@ -120,4 +126,23 @@ footer {
   color: white;
   font-weight: bold;
   padding-right: 80px;
+}
+
+#btn__backToTop{
+  display: none;
+  position: fixed;
+  bottom: 20%;
+  right: 30px;
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#btn__backToTop:hover {
+  background-color: transparent;
+  color: red;
 }
