@@ -3,13 +3,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./Country.css"  type="text/css"/>
+    <link rel="stylesheet" href="./Country.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
+    
+    <script src="./Scroll.js"></script>
     <script src="./Country.js"></script>
     <main>
-      <div id="content">
+      <div class="content">
         <div id="wrapper">
           <div id="title">
           </div>
@@ -21,23 +23,25 @@
       </div>
     </main>
     <footer id="playMusicBar">
-      <div id="musicControl">
-        <img src="../asset/button/repeatButton.svg" alt="" />
-        <img src="../asset/button/previousButton.svg" alt="" />
-        <img src="../asset/button/playButton.svg" id="playButton" />
-        <img src="../asset/button/nextButton.svg" alt="" />
-        <img src="../asset/button/shuffleButton.svg" alt="" />
+      <div class="musicControl">
+        <img src="./asset/button/repeatButton.svg" alt="" />
+        <img src="./asset/button/previousButton.svg" alt="" />
+        <img src="./asset/button/playButton.svg" id="playButton" />
+        <img src="./asset/button/nextButton.svg" alt="" />
+        <img src="./asset/button/shuffleButton.svg" alt="" />
       </div>
-      <div id="musicContent">
-        <img src="../asset/button/coverImage.svg" alt="" />
-        <div id="musicContent__text">
+      <div class="musicContent">
+        <img src="./asset/button/coverImage.svg" alt="" />
+        <div class="musicContent__text">
           <h3>The Everlasting Guilty Crown (Guilty Crown Opening)</h3>
           <p>EGOIST</p>
         </div>
       </div>
-      <div id="musicTime">
+      <div class="musicTime">
         <p>3:07 / 5:22</p>
       </div>
+      <button id="btn__backToTop">Top</button>
     </footer>
+    
   </body>
 </html>
