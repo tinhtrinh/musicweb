@@ -7,7 +7,7 @@
 
 body {
     background: #333333;
-    width: 1440px;
+    width: 1040px;
     margin: auto;
 }
 .nav{
@@ -23,6 +23,11 @@ body {
     text-decoration: none;
     margin-right: 30px;
 }
+
+.nav a:hover{
+    background-color: #1da4b6;
+}
+
 .nav a:focus{
     background-color: #1da4b6;
 }
@@ -30,4 +35,55 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ 
+}
+.component{
+    color: azure;
+    display: flex;
+    width: 100%;
+    border: 1px solid #fff;
+    margin: 5px;
+    padding: 0px;
+}
+.component .stt{
+    flex-grow: 0.5;
+    font-size: 200%;
+    margin: auto 10px;
+}
+.component .image{
+    flex-grow: 0.5;
+}
+.component .icon{
+    flex-grow: 2;
+}
+.component .name{
+    flex-grow: 15;
+    font-size: 90%;
+}
+.component .name .name_song, .name_performer{
+    position: relative;
+    top: 20%;
+    margin-bottom: 20px;
+}
+
+.image img{
+    width: 60px;
+}
+.icon{
+
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+}
+.icon i {
+    
+    position: relative;
+    top: 1.5rem;
+    /* transform: translateY(-50%); */
 }

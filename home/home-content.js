@@ -5,7 +5,7 @@ $(document).ready(function () {
             $("#hot-songs").html(songs.map(song => {
                 return '<a href="#" class="text"><li class="song-container">'+
                             '<img src="'+ song.image +'" alt="song-img" class="song-img-size"><br>'+
-                            song.name + '<br>' +
+                            + song.id + '. ' +song.name + '<br>' +
                             song.singer + '</li></a>'
             }).join(""));
         }
@@ -13,9 +13,18 @@ $(document).ready(function () {
         console.log("An error has occurred.")
     });
 
-    $("#slides").jcarousel();
-    $('.jcarousel').jcarouselAutoscroll({
-        interval: 1000,
-        target: '+=1'
-    })
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = $(".slide");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000);
+    }    
 });

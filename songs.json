@@ -1,16 +1,19 @@
 {
     "songs": [
         {
+            "id": 1,
             "name": "Hoa Hải Đường",
             "singer": "Jack",
             "image": "../asset/content/img (5).svg"
         },
         {
+            "id": 2,
             "name": "Kasui",
             "singer": "Eito",
             "image": "../asset/content/img (9).svg"
         },
         {
+            "id": 3,
             "name": "SkyFall",
             "singer": "Adelle",
             "image": "../asset/content/img (13).svg"

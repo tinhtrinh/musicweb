@@ -3,93 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bxh.css">
     <title>Ngày</title>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-
-    
-
-    <style>
-        *{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .wrapper{
-            display: flex;
-            flex-direction: column;
-            width: 90%;
-         
-        }
-        .component{
-            color: azure;
-            display: flex;
-            width: 100%;
-            border: 1px solid #fff;
-            margin: 5px;
-            padding: 0px;
-        }
-        .component .stt{
-            flex-grow: 0.5;
-            font-size: 200%;
-            margin: auto 10px;
-        }
-        .component .image{
-            flex-grow: 0.5;
-        }
-        .component .icon{
-            flex-grow: 2;
-        }
-        .component .name{
-            flex-grow: 15;
-            font-size: 90%;
-        }
-        .component .name .name_song, .name_performer{
-            position: relative;
-            top: 20%;
-            margin-bottom: 20px;
-        }
-
-        .image img{
-            width: 60px;
-        }
-        .icon{
-   
-            display: flex;
-            justify-content: space-around;
-            height: fit-content;
-        }
-        .icon i {
-            
-            position: relative;
-            top: 1.5rem;
-            /* transform: translateY(-50%); */
-        }
-    </style>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="component">
-            <div class="stt">1</div>
-            <div class="image">
-                
-                <img src="https://images.hungama.com/c/1/1d3/06e/23918543/23918543_300x300.jpg" class="img-responsive" alt="Image">
-                
-            </div>
-            <div class="name">
-                <div class="name_song">Perfect</div>
-                <div class="performer">Ed Sheeran</div>
-            </div>
-            <div class="icon">
-                <i class="fa fa-play"></i>
-                <i class="fa fa-heart-o"></i>
-                <i class="fa fa-ellipsis-h"></i>
-            </div>
-        </div>
-        <div class="component"></div>
-        <div class="component"></div>
-        <div class="component"></div>
-        <div class="component"></div>
-        <div class="component"></div>
-        <div class="component"></div>
-    </div>
+    <div class="wrapper" id="wrapper"></div>
+
+    <script src="../jquery.js"></script>
+    <script src="./bxh.js"></script>
 </body>
 </html>
