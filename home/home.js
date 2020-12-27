@@ -15,11 +15,6 @@ var menus = [
         href: "../nghe-si/nghe-si.html"
     },
     {
-        name: "Thể Loại",
-        src: "../asset/icon/tag.svg",
-        href: "../ca-nhan/ca-nhan.html"
-    },
-    {
         name: "Khu vực",
         src: "../asset/icon/flag.svg",
         href: "/project__country/Country.html"
