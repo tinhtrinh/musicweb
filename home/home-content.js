@@ -3,12 +3,15 @@ $(document).ready(function () {
             var songs = data.songs;
 
             $("#hot-songs").html(songs.map(song => {
-                return '<a href="#" class="text"><li class="song-container">'+
+                return '<a href="#" class="text" ><li class="song-container" id="mostListenedSong">'+
                             '<img src="'+ song.image +'" alt="song-img" class="song-img-size"><br>'+
                             + song.id + '. ' +song.name + '<br>' +
                             song.singer + '</li></a>'
             }).join(""));
-        }
+        },
+            $("#mostListenedSong").click(()=>{
+                alert("a");
+            })
     ).fail(function(){
         console.log("An error has occurred.")
     });

@@ -91,6 +91,7 @@ header {
 }
 
 .search {
+  display: flex;
     position: absolute;
     width: 400px;
     height: 36px;
@@ -109,6 +110,7 @@ header {
     vertical-align: baseline;
     padding: 8px;
     top: 1.3px;
+    flex: 0;
 }
 
 .s-input {
@@ -118,6 +120,7 @@ header {
     border-left: none;
     border-radius:0 5px 5px 0;
     left: 34px;
+    flex: 1;
 }
 
 main {
@@ -127,7 +130,7 @@ main {
     top: 69px;
 }
 
-iframe {
+.home-content {
     width: 1090px; 
     margin-left: 45px;
     margin-top: 40px;
@@ -137,7 +140,6 @@ iframe {
     width: 300px;
     height: 678px;
     background: rgba(0, 0, 0, 0.75);
-    /*border: 1px solid #FFFFFF;*/
 }
 
 .side-item {

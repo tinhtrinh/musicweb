@@ -9,7 +9,7 @@
 </head>
 <body >
     <header>
-        <a href="./home-content.html" target="home-iframe">
+        <a href="./home.html">
             <img src="../asset/icon/key.svg" alt="logo" class="logo icon-size">
             <h1 class="text name">Hợp Âm</h1>
         </a>
@@ -25,7 +25,33 @@
 
     <main>
         <ul class="side-bar" id="side-bar"></ul>
-        <iframe src="./home-content.html" name="home-iframe" id="iframe" frameborder="0"></iframe>
+        <!-- <iframe src="./home-content.html" name="home-iframe" id="iframe" frameborder="0"></iframe> -->
+        <div class="home-content" id="home-content">
+          <div class="slider">
+            <div class="slides" id="slides">
+              <div class="slide" id="slide-1">
+                <img src="../asset/content/slideamee.png" alt="amee">
+              </div>
+              <div class="slide" id="slide-2">
+                <img src="../asset/content/slide gửi gió.png" alt="wind">
+              </div>
+              <div class="slide" id="slide-3">
+                <img src="../asset/content/slide bình.png" alt="jar">
+              </div>
+            </div>
+    
+            <a href="#slide-1">1</a>
+            <a href="#slide-2">2</a>
+            <a href="#slide-3">3</a>
+        </div>
+    
+        <ul style="list-style: none;">
+            <li>
+                <button class="text btn ct-btn" style="width: fit-content; margin:auto">Được nghe nhiều</button><br><br>
+                <ul id="hot-songs"></ul>
+            </li>
+        </ul>
+        </div>
     </main>
 
     <footer id="playMusicBar">
