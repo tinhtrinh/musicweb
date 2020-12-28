@@ -47,14 +47,14 @@
                 "name": "Dalab",
                 "followers": 100000,
                 "followed": false,
-                "avatar": "./avatar.png"
+                "avatar": "../nghe-si/avatar.png"
             },
             {
                 "id": "td-nghesi-8",
                 "name": "Wiz Khalifa",
                 "followers": 100000,
                 "followed": true,
-                "avatar": "./avatar.png"
+                "avatar": "../nghe-si/avatar.png"
             }
     ]
 }
