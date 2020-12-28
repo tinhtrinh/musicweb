@@ -42,6 +42,8 @@ body {
 /* App Submenu Bar Navigation */
 header {
     position: absolute;
+    position: fixed;
+    z-index: 1;
     width: 100%;
     height: 69px;
     left: 0%;
@@ -132,7 +134,7 @@ main {
 
 .home-content {
     width: 1090px; 
-    margin-left: 45px;
+    margin-left: 345px;
     margin-top: 40px;
 }
 
@@ -140,6 +142,8 @@ main {
     width: 300px;
     height: 678px;
     background: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    z-index: 1;
 }
 
 .side-item {
@@ -178,6 +182,7 @@ footer {
     padding: 10px;
     bottom: 0;
     position: fixed;
+    z-index: 2;
     border: 1px solid #fff;
     justify-content: space-between;
 }

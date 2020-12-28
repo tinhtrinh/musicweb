@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    $.getJSON("../project_country/Country.json", (data)=> {
+    $.getJSON("../project__country/Country.json", (data)=> {
             var arr = data.arr;
   
             $("#wrapper").html(arr.map(i => {

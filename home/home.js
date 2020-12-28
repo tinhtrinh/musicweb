@@ -33,7 +33,7 @@ $(document).ready(function () {
     
     $("#s-input").keyup(function(e){ 
         var code = e.key;
-        if(code==="Enter") $("#iframe").attr("src", "../result/result.html");
+        if(code==="Enter") $("#home-content").load("../result/result.html");
     });
 
     $.getJSON("../songs.json", function (data, textStatus, jqXHR) {
@@ -84,8 +84,8 @@ function loadSong(id){
                 if(song.id === id) {
                     $("#musicContent").html('<img src="' + song.image + '" alt="" />'+
                                             '<div id="musicContent__text">'+
-                                            '<h3>'+ song.name +'</h3>'+
-                                            '<p>'+ song.singer +'</p>'+
+                                                '<h3>'+ song.name +'</h3>'+
+                                                '<p>'+ song.singer +'</p>'+
                                             '</div>');
                 }
             });
