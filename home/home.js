@@ -25,31 +25,12 @@ var menus = [
     }
 ]
 
+
 $(document).ready(function () {
     $("#side-bar").html(menus.map(menu => {
-        return '<a href="#" class="text side" id="' + menu.id + '"><li class="side-item"><img src="' + menu.src + '" alt="home" class="icon-size">' + menu.name +'</li></a>'
+        return '<a href="#" class="text side" onclick="load('+ menu.id +')"><li class="side-item"><img src="' + menu.src + '" alt="home" class="icon-size">' + menu.name +'</li></a>'
     }).join("")+ '<a href="../dang_nhap/login.html" class="text"><li class="side-item"><img src="../asset/icon/user.svg" class="icon-size">Cá Nhân</li></a>');
     
-    $("#0").click(function (e) { 
-        e.preventDefault();
-        $("#home-content").load(menus[0].href);
-    });
-
-    $("#1").click(function (e) { 
-        e.preventDefault();
-        $("#home-content").load(menus[1].href);
-    });
-
-    $("#2").click(function (e) { 
-        e.preventDefault();
-        $("#home-content").load(menus[2].href);
-    });
-
-    $("#3").click(function (e) { 
-        e.preventDefault();
-        $("#home-content").load(menus[3].href);
-    });
-
     $("#s-input").keyup(function(e){ 
         var code = e.key;
         if(code==="Enter") $("#iframe").attr("src", "../result/result.html");
@@ -59,17 +40,18 @@ $(document).ready(function () {
         var songs = data.songs;
 
         $("#hot-songs").html(songs.map(song => {
-            return '<a href="#" class="text" ><li class="song-container" id="mostListenedSong">'+
+            return '<a href="#" class="text" onclick="loadSong('+ song.id +')"><li class="song-container">'+
                         '<img src="'+ song.image +'" alt="song-img" class="song-img-size"><br>'+
                         + song.id + '. ' +song.name + '<br>' +
                         song.singer + '</li></a>'
         }).join(""));
-    },
-        $("#mostListenedSong").click(()=>{
-            alert("a");
-        })
-    ).fail(function(){
+    }).fail(function(){
     console.log("An error has occurred.")
+    });
+
+    $("li .song-container").click(function (e) { 
+        e.preventDefault();
+        console.log($("li"));
     });
 
     var myIndex = 0;
@@ -87,3 +69,26 @@ $(document).ready(function () {
         setTimeout(carousel, 2000);
     }    
 });
+
+function load(id) {
+    $("#home-content").load(menus[id].href);
+}
+
+function loadSong(id){
+    console.log(id);
+
+    $.getJSON("../songs.json", function (data, textStatus, jqXHR) {
+            var songs = data.songs;
+            console.log(songs);
+            songs.forEach(song => {
+                if(song.id === id) {
+                    $("#musicContent").html('<img src="' + song.image + '" alt="" />'+
+                                            '<div id="musicContent__text">'+
+                                            '<h3>'+ song.name +'</h3>'+
+                                            '<p>'+ song.singer +'</p>'+
+                                            '</div>');
+                }
+            });
+        }
+    );
+}
