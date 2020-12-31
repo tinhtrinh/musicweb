@@ -48,13 +48,13 @@ p {
      display: -webkit-box;
 }
 
-/* App Submenu Bar Navigation */
+/*------------- App Submenu Bar Navigation -----------------------------*/
 header {
     position: absolute;
     position: fixed;
     z-index: 1;
     width: 100%;
-    height: 69px;
+    height: 9%;
     left: 0%;
     right: 0%;
     top: 0%;
@@ -110,20 +110,6 @@ header {
     top: 12px;
 }
 
-.s-icon {
-    position: absolute;
-    width: 34px;
-    height: 33.3px;
-    border-right: none;
-    border-radius:5px 0 0 5px;
-    background-color: white;
-    text-align: center;
-    vertical-align: baseline;
-    padding: 8px;
-    top: 1.3px;
-    flex: 0;
-}
-
 .s-input {
     position: absolute;
     width: 366px;
@@ -134,11 +120,21 @@ header {
     flex: 1;
 }
 
+.mobile-nav-icon {
+    font-size: 200%;
+    color: white;
+    position: absolute;
+    top: 7px;
+    right: 50px;
+    display: none;
+}
+
+/*--------------main----------------------------------------*/
 main {
     display: flex; 
     flex-direction: row; 
     position: absolute; 
-    top: 69px;
+    top: 9%;
 }
 
 .home-content {
@@ -149,7 +145,7 @@ main {
 
 .side-bar {
     width: 300px;
-    height: 678px;
+    height: 91%;
     background: rgba(0, 0, 0, 0.75);
     position: fixed;
     z-index: 1;
@@ -287,17 +283,20 @@ a:focus .side-item {
     transition: all 0.5s;
 }
 
+/*----------------footer-------------------------------------------*/
+
 footer {
     width: 100%;
     display: flex;
     align-items: center;
     background-color:rgba(0, 0, 0, 1);
-    height: 80px;
+    height: 10.5%;
     padding: 10px;
     bottom: 0;
     position: fixed;
     justify-content: space-between;
     z-index: 2;
+    border: none;
 }
   
 #musicControl {

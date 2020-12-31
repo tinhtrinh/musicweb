@@ -60,7 +60,7 @@ main{
   margin-bottom: 12px;
 }
 
-footer {
+/* footer {
   display: flex;
   align-items: center;
   background-color:rgba(0, 0, 0, 1);
@@ -120,4 +120,4 @@ footer {
   color: white;
   font-weight: bold;
   padding-right: 80px;
-}
+} */
