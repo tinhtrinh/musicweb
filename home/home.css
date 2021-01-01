@@ -12,7 +12,7 @@ body {
 }
 
 .btn {
-    width: 120px;
+    width: 8%;
     height: 39px;
     border-radius: 5px;
     font-size: 15px;
@@ -63,7 +63,6 @@ header {
     margin: 0 auto;
 }
 
-
 .logo {
     position: absolute;
     left: 25px;
@@ -82,7 +81,7 @@ header {
 
 .dn-btn {
     position: absolute;
-    left: 1144px;
+    left: 80%;
     top: 11px;
     background-color: #ffffff;
     color: #000000;
@@ -90,7 +89,7 @@ header {
 
 .dk-btn {
     position: absolute;
-    left: 1284px;
+    left: 90%;
     top: 11px;
     background-color: #3FA2F7;
 }
@@ -102,22 +101,13 @@ header {
 }
 
 .search {
-    display: flex;
     position: absolute;
-    width: 400px;
-    height: 36px;
-    left: 520px;
-    top: 12px;
-}
-
-.s-input {
-    position: absolute;
-    width: 366px;
+    width: 30%;
     height: 36px;
     border-left: none;
     border-radius:5px;
-    left: 34px;
-    flex: 1;
+    left: 34%;
+    top: 12px;
 }
 
 .mobile-nav-icon {
@@ -144,7 +134,7 @@ main {
 }
 
 .side-bar {
-    width: 300px;
+    width: 15%;
     height: 91%;
     background: rgba(0, 0, 0, 0.75);
     position: fixed;
