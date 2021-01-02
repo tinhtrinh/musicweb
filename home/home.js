@@ -2,7 +2,7 @@ var menus = [
     {
         name: "Trang Chủ",
         src: "../asset/icon/home.svg",
-        href: "./home-content.html"
+        href: "./home.html"
     },
     {
         name: "Bảng Xếp Hạng",
@@ -28,16 +28,27 @@ var menus = [
 
 $(document).ready(function () {
     $("#side-bar").html(menus.map(menu => {
-        return '<a href="'+ menu.href +'" class="text" target="home-iframe"><li class="side-item"><img src="' + menu.src + '" alt="home" class="icon-size">' + menu.name +'</li></a>'
-    }).join("")+ '<a href="../dang_nhap/login.html" class="text"><li class="side-item"><img src="../asset/icon/user.svg" class="icon-size">Cá Nhân</li></a>');
-    
-    $("#end").click(function (e) { 
+        return `
+        <a href="${menu.href}" class="text">
+            <div class="side-item">
+            <img src="${menu.src}" alt="home" class="icon-size"/>${menu.name}
+            </div>
+        </a>
+        `
+    }).join("") + 
+    `<a href="../dang_nhap/login.html" class="text">
+        <li class="side-item">
+            <img src="../asset/icon/user.svg" class="icon-size">Cá Nhân
+        </li>
+    </a>`);
+
+    $("#end").click((e) => {
         e.preventDefault();
         $("#playMusicBar").css("visibility", "hidden");
     });
 
-    $("#s-input").keyup(function(e){ 
+    $("#s-input").keyup((e) => {
         var code = e.key;
-        if(code==="Enter") $("#iframe").attr("src", "../result/result.html");
+        if (code === "Enter") $("#iframe").attr("src", "../result/result.html");
     });
 });

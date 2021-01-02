@@ -12,7 +12,7 @@ body {
   background-color: #333333;
 }
 
-main{
+main {
   display: flex;
 }
 
@@ -53,8 +53,7 @@ main{
 }
 
 #item {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 10px 40px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -69,7 +68,7 @@ main{
 footer {
   display: flex;
   align-items: center;
-  background-color:rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 1);
   width: 100%;
   height: 80px;
   padding: 10px;
@@ -90,6 +89,10 @@ footer {
   margin-left: 15px;
   margin-right: 15px;
 }
+
+.musicControl > img:hover {
+  color: red;
+} 
 
 .musicControl > #playButton {
   height: 30px;
@@ -117,6 +120,10 @@ footer {
   font-size: 16px;
 }
 
+.musicContent__text > h3:hover {
+  color: red;
+}
+
 .musicContent__text > p {
   font-size: 14px;
   font-weight: bold;
@@ -128,7 +135,7 @@ footer {
   padding-right: 80px;
 }
 
-#btn__backToTop{
+#btn__backToTop {
   display: none;
   position: fixed;
   bottom: 20%;
@@ -144,5 +151,20 @@ footer {
 
 #btn__backToTop:hover {
   background-color: transparent;
+  color: red;
+}
+
+#item:hover {
+  background-color: #444;
+}
+
+#item > img:hover {
+  cursor: pointer;
+}
+
+#item > h1:hover,
+h4:hover,
+p:hover {
+  cursor: pointer;
   color: red;
 }
