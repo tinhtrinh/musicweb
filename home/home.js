@@ -67,7 +67,14 @@ $(document).ready(function () {
         if (myIndex > x.length) {myIndex = 1}    
         x[myIndex-1].style.display = "block";  
         setTimeout(carousel, 5000);
-    }    
+    }  
+    
+    var click = false;
+    $("#ham-btn").click(function (e) { 
+        e.preventDefault();
+        click != click;
+        click === true ? $("#side-bar").css("display", "block") : $("#side-bar").css("display", "none");
+    });
 });
 
 function load(id) {
