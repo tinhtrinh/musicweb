@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./home.css">
-    <link rel="stylesheet" href="./queries.css">
+    <!-- <link rel="stylesheet" href="./queries.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Welcome to Hợp Âm</title>
 </head>
 <body >
-    <header>
+    <div id="header">
+      <div class="logo">
         <a href="./home.html">
-            <img src="../asset/icon/key.svg" alt="logo" class="logo icon-size">
-            <h1 class="text name">Âm Nhạc</h1>
+          <img src="../asset/icon/key.svg" alt="logo" class="logo icon-size">
         </a>
+<<<<<<< HEAD
 
         <input type="text" class="search" placeholder="&nbsp; &#xF002; Tìm kiếm..." id="s-input">  
         
@@ -22,15 +24,32 @@
 
         <i class="fas fa-bars mobile-nav-icon" id="ham-btn"></i>
     </header>
+=======
+       <a href="./home.html" id="logo__text">Hợp Âm</a>
+      </div>
+     
+      <div class="searchContainer"> 
+        <i class="fa fa-search s-icon"></i>
+        <input class="searchBox" type="search" name="search" placeholder="Search...">
+      </div>
+      <div class="btn-wrapper">
+        <a href="../dang_nhap/login.html"><button class="signIn-btn btn text">Đăng nhập</button></a>
+        <a href="../dang_ki/dangki.html"><button class="signUp-btn btn text">Đăng Ký</button></a>
+      </div>
+    </div>
+>>>>>>> be6cd14be669395ddbb4005e90f725dcc9a43405
 
     <main>
         <ul class="side-bar" id="side-bar"></ul>
-
-        <div class="home-content" id="home-content">
+        <div class="content">
           <div class="slider">
             <div class="slides" id="slides">
               <div class="slide" id="slide-1">
+<<<<<<< HEAD
                 <img src="../asset/content/slideamee.png" alt="amee" width="100%">
+=======
+                <img src="../asset/content/slideamee.png" alt="amee" >
+>>>>>>> be6cd14be669395ddbb4005e90f725dcc9a43405
               </div>
               <div class="slide" id="slide-2">
                 <img src="../asset/content/slide gửi gió.png" alt="wind" width="100%">
@@ -39,19 +58,25 @@
                 <img src="../asset/content/slide bình.png" alt="jar" width="100%">
               </div>
             </div>
-    
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
+            <a href="#slide-1" class="change"></a>
+            <a href="#slide-2" class="change"></a>
+            <a href="#slide-3"class="change"></a>
           </div>
-          <p class="text">Được nghe nhiều</p>
-          <ul id="hot-songs"></ul>
+          <div id="btn-container"><button class="ct-btn">Được nghe nhiều</button></div>
+          
+          <div id="hot-songs"></div>
+        </ul>
         </div>
     </main>
 
     <footer id="playMusicBar">
+<<<<<<< HEAD
       <audio src="" controls id="playMusicBar" style="width: 50%"></audio>
         <!-- <div id="musicControl">
+=======
+      <audio src="" controls id="playMusicBar"></audio>
+        <div id="musicControl">
+>>>>>>> be6cd14be669395ddbb4005e90f725dcc9a43405
           <img src="../asset/button/repeatButton.svg" alt="" />
           <img src="../asset/button/previousButton.svg" alt="" />
           <img src="../asset/button/playButton.svg" id="playButton" />
@@ -67,10 +92,10 @@
         </div>
         <div id="musicTime">
           <p>3:07 / 5:22</p>
-        </div> -->
+        </div>
       </footer>
 
-    <script src="../jquery.js"></script>
+    <script src="./home-content.js"></script>
     <script src="./home.js"></script>
 </body>
 </html>
