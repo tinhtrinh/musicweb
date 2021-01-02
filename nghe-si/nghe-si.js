@@ -1,6 +1,6 @@
 $(document).ready(() => {
 
-    $.getJSON("artists.json", (data) => {
+    $.getJSON("../nghe-si/artists.json", (data) => {
         var artists = data.artists;
         output(artists);
     })

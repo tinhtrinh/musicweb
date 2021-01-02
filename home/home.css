@@ -1,4 +1,5 @@
 * {
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,6 +18,25 @@ body {
   height: 39px;
   border-radius: 5px;
   font-size: 15px;
+=======
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', FontAwesome,sans-serif;
+}
+
+body {
+    background: #333333;
+    width: 100%;
+    margin: auto;
+}
+
+.btn {
+    width: 8%;
+    height: 39px;
+    border-radius: 5px;
+    font-size: 15px;
+>>>>>>> 9a69d2916f1d16f6f5fc1239cc481c64c09540b6
 }
 
 .text {
@@ -40,6 +60,7 @@ body {
   height: 90px;
 }
 
+<<<<<<< HEAD
 /* App Submenu Bar Navigation */
 #header {
   display: flex;
@@ -50,6 +71,30 @@ body {
   background-color: #000000;
   padding: 20px;
   margin-bottom: 20px;
+=======
+p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+     display: -webkit-box;
+}
+
+/*------------- App Submenu Bar Navigation -----------------------------*/
+header {
+    position: absolute;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 9%;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background-color: #000000;
+    margin: 0 auto;
+>>>>>>> 9a69d2916f1d16f6f5fc1239cc481c64c09540b6
 }
 
 .logo {
@@ -74,6 +119,7 @@ body {
   align-items: center;
 }
 
+<<<<<<< HEAD
 .signIn-btn {
   background-color: #ffffff;
   color: #000000;
@@ -98,6 +144,21 @@ body {
   width: 130px;
   height: 40px;
   cursor: pointer;
+=======
+.dn-btn {
+    position: absolute;
+    left: 80%;
+    top: 11px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dk-btn {
+    position: absolute;
+    left: 90%;
+    top: 11px;
+    background-color: #3FA2F7;
+>>>>>>> 9a69d2916f1d16f6f5fc1239cc481c64c09540b6
 }
 
 .ct-btn {
@@ -185,6 +246,7 @@ a:focus .side-item {
   background-color: #3fa2f7;
 }
 
+<<<<<<< HEAD
 .content {
   flex: 1;
 }
@@ -278,6 +340,8 @@ a:focus .side-item {
   }
 }
 
+=======
+>>>>>>> 9a69d2916f1d16f6f5fc1239cc481c64c09540b6
 .slider {
   width: 93%;
   height: fit-content;
@@ -293,6 +357,7 @@ a:focus .side-item {
 }
 
 .slides {
+<<<<<<< HEAD
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -302,6 +367,10 @@ a:focus .side-item {
     scroll-snap-points-x: repeat(300px);
     scroll-snap-type: mandatory;
     */
+=======
+    display: flex;
+    overflow: hidden;
+>>>>>>> 9a69d2916f1d16f6f5fc1239cc481c64c09540b6
 }
 
 .slides::-webkit-scrollbar {
@@ -315,6 +384,7 @@ a:focus .side-item {
 }
 
 .slides::-webkit-scrollbar-track {
+<<<<<<< HEAD
   background: transparent;
 }
 
@@ -336,6 +406,31 @@ a:focus .side-item {
     animation-name: tostart, snap;
 } */
 
+=======
+    background: transparent;
+}
+
+.slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 300px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #eee;
+    
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    transform: translate3d(-50%,-40%);
+    transition: 0.5s;
+}
+
+  
+>>>>>>> 9a69d2916f1d16f6f5fc1239cc481c64c09540b6
 .author-info {
   background: rgba(0, 0, 0, 0.75);
   color: white;
@@ -374,6 +469,7 @@ a:focus .side-item {
   background: #000;
 }
 
+<<<<<<< HEAD
 .slider-change {
   width: fit-content;
 }
@@ -448,3 +544,106 @@ footer {
 .change:hover {
   background-color: #fff;
 }
+=======
+.list {
+    list-style: none
+}
+
+.song-container {
+    list-style: none;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding-top: 8px;
+    font-size: 14px;
+    float: left;
+    margin: 12px;
+    overflow: hidden;
+}
+
+#playButton {
+    position: absolute;
+    height: 30px;
+    margin: 5%;
+    opacity: 0;
+}
+
+.song-container:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+}
+
+.song-container:hover #playButton {
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+/*----------------footer-------------------------------------------*/
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 1);
+    height: 10.5%;
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 2;
+    border: none;
+}
+  
+#musicControl {
+    width: 30%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+  
+#musicControl > img {
+    height: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+  
+#musicControl > #playButton {
+    height: 30px;
+}
+  
+#musicContent {
+    display: flex;
+    color: #fff;
+}
+  
+#musicContent > img {
+    height: 60px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+  
+#musicContent__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+  
+#musicContent__text > h3 {
+    font-size: 16px;
+}
+  
+#musicContent__text > p {
+    font-size: 14px;
+    font-weight: bold;
+}
+  
+#musicTime {
+    color: white;
+    font-weight: bold;
+    padding-right: 80px;
+}
+  
+>>>>>>> 9a69d2916f1d16f6f5fc1239cc481c64c09540b6

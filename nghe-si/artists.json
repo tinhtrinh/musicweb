@@ -5,56 +5,56 @@
                 "name": "Adam Levineeeeeee",
                 "followers": 100000,
                 "followed": false,
-                "avatar": "./avatar.png"
+                "avatar": "../nghe-si/avatar.png"
             },
             {
                 "id": "td-nghesi-2",
                 "name": "Son Tung MTP",
                 "followers": 10000000,
                 "followed": true,
-                "avatar": "./avatar.png"
+                "avatar": "../nghe-si/avatar.png"
             },
             {
                 "id": "td-nghesi-3",
                 "name": "Avicii",
                 "followers": 100000,
                 "followed": false,
-                "avatar": "./avatar.png"
+                "avatar": "../nghe-si/avatar.png"
             },
             {
                 "id": "td-nghesi-4",
                 "name": "Ed Sheeran",
                 "followers": 100000,
                 "followed": false,
-                "avatar": "./avatar.png"
+                "avatar": "../nghe-si/avatar.png"
             },
             {
                 "id": "td-nghesi-5",
                 "name": "K-ICM",
                 "followers": 100000,
                 "followed": false,
-                "avatar": "./avatar.png"
+                "avatar": "../nghe-si/avatar.png"
             },
             {
                 "id": "td-nghesi-6",
                 "name": "Only C",
                 "followers": 10000000,
                 "followed": false,
-                "avatar": "./avatar.png"
+                "avatar": "../nghe-si/avatar.png"
             },
             {
                 "id": "td-nghesi-7",
                 "name": "Dalab",
                 "followers": 100000,
                 "followed": false,
-                "avatar": "./avatar.png"
+                "avatar": "../nghe-si/avatar.png"
             },
             {
                 "id": "td-nghesi-8",
                 "name": "Wiz Khalifa",
                 "followers": 100000,
                 "followed": true,
-                "avatar": "./avatar.png"
+                "avatar": "../nghe-si/avatar.png"
             }
     ]
 }
