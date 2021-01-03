@@ -1,0 +1,143 @@
+
+<html>
+<head>
+	<title> Trang cá nhân </title>
+
+	<style type="text/css"> 
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: rgb(51, 51, 51);
+		}
+
+		.div1 {
+			margin-top: 70px;
+		}
+		
+		table, td, tr {
+			border: 5px solid rgb(51, 51, 51);
+			padding: 5px;
+		}
+		.tham-gia {
+			border: 5px solid rgb(61, 61, 61);
+			padding: 5px;
+		}
+		.button-chinhsua {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 15px;
+			background-color:rgb(196, 196, 196);
+			padding: 8px;
+			margin: 5px;
+		}
+		.button-ten-nguoi-dung {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 18px;
+			background-color:rgb(69, 69, 69);
+			color: white;
+			border: 1px white solid;
+			padding: 8px;
+			margin: 5px;
+			width: 200px;
+		}
+		.td-row1 {
+			font-size: 20px;
+			color: white;
+			background-color: rgb(61, 61, 61);
+		}
+		.td-tu-gioi-thieu {
+			color: white;
+			padding: 20 0 20 0;
+		}
+		.td-navigation {
+			font-weight: bold;
+			color: rgb(63, 162, 247);
+			height: 60px;
+		}
+		.td-navigation:hover {
+			background-color: rgb(92, 92, 92);
+		}
+		.span-xem-tat-ca {
+			color:rgb(11, 106, 231);
+			font-size: 13px;
+		}
+		.span-thong-tin-ca-nhan {
+			font-size: 25;
+		}
+	</style>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../home/home.css">
+	<script src="../jquery.js"></script>
+	<script src="./ca-nhan.js"></script>
+	<script src="../home/home.js"></script>
+</head>
+<body>
+	<header>
+        <a href="../home/home.html" target="home-iframe">
+            <img src="../asset/icon/key.svg" alt="logo" class="logo icon-size">
+            <h1 class="text name">Âm Nhạc</h1>
+        </a>
+
+        <div class="search">
+            <i class="fa fa-search s-icon"></i>
+            <input type="text" class="s-input" placeholder="Tìm kiếm..." id="s-input">
+        </div>
+        
+        <a href="../dang_nhap/login.html"><button class="dn-btn btn text">Đăng nhập</button></a>
+        <a href="../dang_ki/dangki.html"><button class="dk-btn btn text">Đăng Ký</button></a>
+    </header>
+
+	<div class="div1">
+		<table align=center>
+			<tr>
+				<td class="td-row1" width=1400px colspan="8"> 
+					<span class="span-thong-tin-ca-nhan">Thông tin cá nhân</span> 
+					<button class="button-chinhsua"> *Chỉnh sửa </button>
+				</td>
+			</tr>  
+			<tr>
+				<td class="td-row1" align=center width=400px rowspan="4"> 
+					<img src="avatar.png" width=200px height=200px> <br>
+					<button class="button-ten-nguoi-dung"> Tên người dùng</button>
+					<br>
+					<table class="tham-gia" align=left>
+						<tr class="tham-gia">
+							<td class="td-row1 tham-gia" colspan=2> Tham gia ngày</td>
+						</tr>
+						<tr class="tham-gia">
+							<td class="tham-gia"> <img src="icon-facebook.png"> </td>
+							<td class="tham-gia"> <button class="button-ten-nguoi-dung"> Link Facebook </button> </td>
+						</tr>
+						<tr class="tham-gia">
+							<td class="tham-gia"> <img src="icon-youtube.png"> </td>
+							<td class="tham-gia"> <button class="button-ten-nguoi-dung"> Link Youtube </button> </td>
+						</tr>
+					</table>
+					<!-- <p align=left> Tham gia ngày </p>
+					<p align=left> <img src="icon-facebook.png"> <button> Link Facebook </button> </p>
+					<p align=left> <img src="icon-youtube.png"> <button> Link Youtube </button></p> -->
+				</td>
+				<td class="td-row1 td-navigation" width=150px align=center> Thông tin </td>
+				<td class="td-row1 td-navigation" width=150px align=center> BH đã đăng </td>
+				<td class="td-row1 td-navigation" width=150px align=center> BH yêu thích </td>
+				<td class="td-row1 td-navigation" width=150px align=center> Playlist </td>
+				<td class="td-row1 td-navigation" width=150px align=center> Điểm uy tín </td>
+				<td width=150px align=center> </td>
+			</tr>  
+			<tr>
+				<td class="td-row1" colspan="6" height="100px"> Playlist của username <span class="span-xem-tat-ca">Xem tất cả</span> </td>
+			</tr>  
+			<tr>
+				<td class="td-row1" colspan="3"> Bài hát yêu thích của username <span class="span-xem-tat-ca">Xem tất cả</span> <br><br><br> </td>
+				<td class="td-row1" colspan="3"> Bài hát đã đăng của username <span class="span-xem-tat-ca">Xem tất cả</span> <br><br><br>  </td>
+			</tr>  
+			<tr>
+				<td colspan="6" height="100%"> </td>
+			</tr>  
+			<tr>
+				<td class="td-row1 td-tu-gioi-thieu" align=center> Tự giới thiệu <span style="color: rgb(11, 106, 231)">Chỉnh sửa</span> </td>
+			</tr>  
+		</table>
+	</div>
+
+</body>
+</html>
