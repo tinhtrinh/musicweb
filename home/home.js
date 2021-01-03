@@ -40,7 +40,7 @@ $(document).ready(function () {
         var songs = data.songs;
 
         $("#hot-songs").html(songs.slice(0, 6).map(song => {
-            return '<a href="#" class="text" onclick="loadSong('+ song.id +')"><li class="song-container"><img src="../asset/button/playButton.svg" id="playButton" />'+
+            return '<a href="#" class="text" onclick="loadSong('+ song.id +')"><li class="song-container"><img src="../asset/button/playButton.svg" id="playButton1" />'+
                         '<img src="'+ song.image +'" alt="song-img" class="song-img-size">'+
                         '<p>'+ song.id + '. ' + song.name + '</p>' +
                         '<p>' + song.singer + '</p>' + '</li></a>'

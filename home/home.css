@@ -255,7 +255,7 @@ a:focus .side-item {
     overflow: hidden;
 }
 
-#playButton {
+#playButton1 {
     position: absolute;
     height: 30px;
     margin: 5%;
@@ -267,7 +267,7 @@ a:focus .side-item {
     transition: all 0.3s;
 }
 
-.song-container:hover #playButton {
+.song-container:hover #playButton1 {
     opacity: 1;
     transform: scale(1.2);
     transition: all 0.5s;
