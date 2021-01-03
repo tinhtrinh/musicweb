@@ -2,7 +2,7 @@
     "songs": [
         {
             "id": 1,
-            "name": "Hoa Hải Đường",
+            "name": "Hoa Hải Đườngfkljaflkjskf ksajf klsjflkjsafjafj",
             "singer": "Jack",
             "image": "../asset/content/img (5).svg"
         },
@@ -32,6 +32,12 @@
         },
         {
             "id": 6,
+            "name": "The Everlasting Guilty Crown (Guilty Crown Opening)",
+            "singer": "EGOIST",
+            "image": "../asset/button/coverImage.svg"
+        },
+        {
+            "id": 7,
             "name": "GIANTS",
             "singer": "",
             "image": "../asset/content/img (27).svg"

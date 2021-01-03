@@ -3,7 +3,7 @@ var menus = [
         id: 0,
         name: "Trang Chủ",
         src: "../asset/icon/home.svg",
-        href: "./home-content.html"
+        href: "./home.html"
     },
     {
         id: 1,
@@ -28,25 +28,28 @@ var menus = [
 
 $(document).ready(function () {
     $("#side-bar").html(menus.map(menu => {
-        return '<a href="#" class="text side" onclick="load('+ menu.id +')"><li class="side-item"><img src="' + menu.src + '" alt="home" class="icon-size">' + menu.name +'</li></a>'
-    }).join("")+ '<a href="../dang_nhap/login.html" class="text"><li class="side-item"><img src="../asset/icon/user.svg" class="icon-size">Cá Nhân</li></a>');
-    
-    $("#s-input").keyup(function(e){ 
-        var code = e.key;
-        if(code==="Enter") $("#home-content").load("../result/result.html");
+        return `
+        <a href="${menu.href}" class="text">
+            <div class="side-item">
+            <img src="${menu.src}" alt="home" class="icon-size"/>${menu.name}
+            </div>
+        </a>
+        `
+    }).join("") + 
+    `<a href="../dang_nhap/login.html" class="text">
+        <li class="side-item">
+            <img src="../asset/icon/user.svg" class="icon-size">Cá Nhân
+        </li>
+    </a>`);
+
+    $("#end").click((e) => {
+        e.preventDefault();
+        $("#playMusicBar").css("visibility", "hidden");
     });
 
-    $.getJSON("../songs.json", function (data, textStatus, jqXHR) {
-        var songs = data.songs;
-
-        $("#hot-songs").html(songs.map(song => {
-            return '<a href="#" class="text" onclick="loadSong('+ song.id +')"><li class="song-container">'+
-                        '<img src="'+ song.image +'" alt="song-img" class="song-img-size"><br>'+
-                        + song.id + '. ' +song.name + '<br>' +
-                        song.singer + '</li></a>'
-        }).join(""));
-    }).fail(function(){
-    console.log("An error has occurred.")
+    $("#s-input").keyup((e) => {
+        var code = e.key;
+        if (code === "Enter") $("#iframe").attr("src", "../result/result.html");
     });
 
     $("li .song-container").click(function (e) { 
@@ -66,12 +69,20 @@ $(document).ready(function () {
         myIndex++;
         if (myIndex > x.length) {myIndex = 1}    
         x[myIndex-1].style.display = "block";  
-        setTimeout(carousel, 2000);
-    }    
+        setTimeout(carousel, 5000);
+    }  
+    
+    var click = false;
+    $("#ham-btn").click(function (e) { 
+        e.preventDefault();
+        click != click;
+        click === true ? $("#side-bar").css("display", "block") : $("#side-bar").css("display", "none");
+    });
 });
 
 function load(id) {
     $("#home-content").load(menus[id].href);
+    var nId = id.toString();
 }
 
 function loadSong(id){
@@ -79,7 +90,6 @@ function loadSong(id){
 
     $.getJSON("../songs.json", function (data, textStatus, jqXHR) {
             var songs = data.songs;
-            console.log(songs);
             songs.forEach(song => {
                 if(song.id === id) {
                     $("#musicContent").html('<img src="' + song.image + '" alt="" />'+

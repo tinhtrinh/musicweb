@@ -1,0 +1,33 @@
+@media only screen and (max-width:1200px){
+    .side-bar {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width:1080px){
+    .text {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .side-bar {
+        display: none;
+    }
+
+    .dk-btn {
+        display: none;
+    }
+
+    .dn-btn {
+        display: none;
+    }
+
+    .mobile-nav-icon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:480px){
+
+}
