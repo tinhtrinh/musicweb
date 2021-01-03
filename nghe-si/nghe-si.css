@@ -34,9 +34,9 @@ table, td, tr {
 }
 .img-avatar {
     border-radius: 50%;
-    width: 125;
-    height: 125;
-    margin: 5;
+    width: 125px;
+    height: 125px;
+    margin: 5px;
 }
 .button-follow {
     background-color: rgb(196, 196, 196);
