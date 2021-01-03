@@ -17,24 +17,6 @@
             "name": "SkyFall",
             "singer": "Adelle",
             "image": "../asset/content/img (13).svg"
-        },
-        {
-            "id": 4,
-            "name": "Youru ni Kakeru",
-            "singer": "YOASOBI",
-            "image": "../asset/content/img (10).svg"
-        },
-        {
-            "id": 5,
-            "name": "Rebirth",
-            "singer": "",
-            "image": "../asset/content/img (21).svg"
-        },
-        {
-            "id": 6,
-            "name": "GIANTS",
-            "singer": "",
-            "image": "../asset/content/img (27).svg"
         }
     ]
 }

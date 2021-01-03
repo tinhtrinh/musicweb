@@ -161,10 +161,6 @@ a:focus .side-item {
     background-color: #3FA2F7;
 }
 
-.list {
-    list-style: none
-}
-
 .song-container {
     list-style: none;
     width: 150px;
