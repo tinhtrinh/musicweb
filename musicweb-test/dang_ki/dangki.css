@@ -62,10 +62,12 @@ button {
 
 .signup {
     background-color: #0000FF;
+    border-radius: 10px;
 }
 
 .cancel {
     background-color: #ef5151;
+    border-radius: 10px;
 }
 
 .dienthongtin {
@@ -86,8 +88,4 @@ button {
     height: 140px;
     display: block;
     margin: 0 auto;
-}
-
-footer {
-    top: 840px;
 }
