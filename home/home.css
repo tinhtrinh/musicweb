@@ -122,33 +122,9 @@ body {
   padding: 10px;
 }
 
-<<<<<<< HEAD
-.mobile-nav-icon {
-    font-size: 200%;
-    color: white;
-    position: absolute;
-    top: 7px;
-    left: 90%;
-    display: none;
-}
-
-/*--------------main----------------------------------------*/
-main {
-    display: flex; 
-    flex-direction: row; 
-    position: absolute;
-    width: 100%;
-    top: 9%;
-}
-
-.home-content {
-    width: 80%; 
-    margin-left: 18%;
-    margin-top: 40px;
-=======
 .searchContainer {
   display: grid;
-  grid-template-columns:1.5rem 4fr 1fr;
+  grid-template-columns: 1.5rem 4fr 1fr;
   width: 40%;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -159,19 +135,19 @@ main {
   display: none;
 }
 
-.searchContainer:focus-within .searchBox{
-  grid-column:1/4;
+.searchContainer:focus-within .searchBox {
+  grid-column: 1/4;
 }
 
 .searchContainer:focus-within .searchBox::placeholder {
-  color:transparent;
+  color: transparent;
 }
 
 .s-icon {
   padding: 0.5rem;
-  grid-row:1;
-  grid-column:1/2;
-  z-index:2;
+  grid-row: 1;
+  grid-column: 1/2;
+  z-index: 2;
   color: #000;
   background-color: white;
 }
@@ -179,14 +155,13 @@ main {
 .searchBox {
   border: 0;
   padding: 0.5rem;
-  grid-column:2/4;
-  grid-row:1;
-  outline:none;
+  grid-column: 2/4;
+  grid-row: 1;
+  outline: none;
 }
 
 main {
   display: flex;
->>>>>>> be6cd14be669395ddbb4005e90f725dcc9a43405
 }
 
 .side-bar {
@@ -343,24 +318,23 @@ a:focus .side-item {
   background: transparent;
 }
 
-<<<<<<< HEAD
 .author-info a {
-    color: white;
+  color: white;
 }
-  
+
 .slider > a {
-    display: inline-flex;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: #3FA2F7;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 0 0 0.5rem 0;
-    position: relative;
-    top: -30px;
-=======
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #3fa2f7;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+  top: -30px;
+}
 .slides > .slide {
   scroll-snap-align: start;
   flex-shrink: 0;
@@ -373,7 +347,6 @@ a:focus .side-item {
     animation-timing-function: ease;
     animation-duration: 4s;
     animation-iteration-count: infinite; */
->>>>>>> be6cd14be669395ddbb4005e90f725dcc9a43405
 }
 
 /* .slides > div:last-child {
