@@ -9,19 +9,26 @@
     <title>Home</title>
 </head>
 <body >
-    <header>
+    <div id="header">
+      <div class="logo">
         <a href="./home.html">
-            <img src="../asset/icon/key.svg" alt="logo" class="logo icon-size">
-            <h1 class="text name">Âm Nhạc</h1>
+          <img src="../asset/icon/key.svg" alt="logo" class="logo icon-size">
         </a>
+       <a href="./home.html" id="logo__text">Âm Nhạc</a>
+      </div>
 
-        <input type="text" class="search" placeholder="&nbsp; &#xF002; Tìm kiếm..." id="s-input">  
+        <div class="searchContainer"> 
+          <i class="fa fa-search s-icon"></i>
+          <input class="searchBox" type="search" name="search" placeholder="Search...">
+        </div> 
         
-        <a href="../dang_nhap/login.html"><button class="dn-btn btn text">Đăng nhập</button></a>
-        <a href="../dang_ki/dangki.html"><button class="dk-btn btn text">Đăng Ký</button></a>
+        <div class="btn-wrapper">
+          <a href="../dang_nhap/login.html"><button class="signIn-btn btn text">Đăng nhập</button></a>
+          <a href="../dang_ki/dangki.html"><button class="signUp-btn btn text">Đăng Ký</button></a>
+        </div>
 
         <i class="fas fa-bars mobile-nav-icon"></i>
-    </header>
+      </div>
 
     <main>
         <ul class="side-bar" id="side-bar"></ul>
@@ -50,7 +57,6 @@
     </main>
 
     <footer id="playMusicBar">
-      <audio src="" controls id="playMusicBar"></audio>
         <div id="musicControl">
           <img src="../asset/button/repeatButton.svg" alt="" />
           <img src="../asset/button/previousButton.svg" alt="" />

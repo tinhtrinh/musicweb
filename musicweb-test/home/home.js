@@ -21,7 +21,7 @@ var menus = [
         id: 3,
         name: "Khu vực",
         src: "../asset/icon/flag.svg",
-        href: "/project__country/Country.html"
+        href: "../project__country/Country.html"
     }
 ]
 
