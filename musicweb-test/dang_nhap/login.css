@@ -80,7 +80,7 @@
     transform: rotate(-0.01deg);
 }
 
-.signUp-btn {
+.signUp1-btn {
     position: absolute;
     width: 352px;
     height: 38px;
@@ -99,7 +99,7 @@
     color: #FFFFFF;
 }
 
-.signUp-btn:hover {
+.signUp1-btn:hover {
 background-color: #66dcfa; 
 color: white;   
 }
