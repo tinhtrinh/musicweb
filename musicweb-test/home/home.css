@@ -40,7 +40,6 @@ body {
 }
 
 p {
-  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 1;
@@ -303,15 +302,10 @@ a:focus .side-item {
   list-style: none;
 }
 
-#music-list {
-  width: fit-content;
-  height: fit-content;
-}
-
 .song-container {
   list-style: none;
-  width: 100px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-color: rgba(255, 255, 255, 0.2);
   text-align: center;
   padding-top: 8px;
