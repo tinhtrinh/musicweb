@@ -54,24 +54,17 @@ $(document).ready(function () {
     $.getJSON("../songs.json", (data) => {
         var songs = data.songs;
 
-        $("#hot-songs").html(songs.slice(0, 6).map(song => {
+        $("#hot-songs").html(songs.map(song => {
             return ` 
-            <a href="#" class="text" onclick="loadSong(${song.id})" >
-                <div class="song-container">
+            <a href="#" class="text song-container" onclick="loadSong(${song.id})">
                 <img src="../asset/button/playButton.svg" id="playButton1" /> 
                 <img src="${song.image}" alt="song-img" class="song-img-size" /> 
                 <p>  ${song.id}.${song.name} </p> 
                 <p> ${song.singer} </p>  
-                </div>
             </a>`
-        }).join(""));
+        }));
     }).fail(() => {
         console.log("An error has occurred.")
-    });
-
-    $("li .song-container").click((e) => {
-        e.preventDefault();
-        console.log($("li"));
     });
 
     var myIndex = 0;
