@@ -1,19 +1,278 @@
-@media only screen and (max-width:1200px){
-    .side-bar {
-        width: 20%;
-    }
+@media only screen and (max-width: 1200px) {
+  .side-bar {
+    width: 20%;
+  }
 }
 
-@media only screen and (max-width:1023px){
-    .text {
-        font-size: 14px;
-    }
+@media only screen and (max-width: 1023px) {
+  .text {
+    font-size: 14px;
+  }
 }
 
-@media only screen and (min-width:600px){
-
+@media only screen and (min-width: 600px) {
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width: 600px) {
+  #header {
+    background: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-color: #000;
+  }
 
+  .logo {
+    margin-left: -10px;
+  }
+
+  #logo__text {
+    display: none;
+  }
+
+  .searchContainer {
+    display: grid;
+    grid-template-columns: 1.5rem 4fr 1fr;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .searchContainer:focus-within i {
+    display: none;
+  }
+
+  .searchContainer:focus-within .searchBox {
+    grid-column: 1/4;
+  }
+
+  .searchContainer:focus-within .searchBox::placeholder {
+    color: transparent;
+  }
+
+  .s-icon {
+    padding: 0.5rem;
+    grid-row: 1;
+    grid-column: 1/2;
+    z-index: 2;
+    color: #000;
+    background-color: white;
+  }
+
+  .searchBox {
+    border: 0;
+    padding: 0.5rem;
+    grid-column: 2/4;
+    grid-row: 1;
+    outline: none;
+  }
+
+  .signIn-btn {
+    display: none;
+  }
+
+  .signUp-btn {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 9%;
+  }
+
+  .home-content {
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .side-bar {
+    display: none;
+    width: fit-content;
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  .side-item {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 2px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .side-item > img {
+    height: 20px;
+  }
+
+  .side-item:hover {
+    background: none;
+  }
+
+  a:focus .side-item {
+    background-color: #3fa2f7;
+  }
+
+  .icon-size {
+    margin: 0 auto;
+  }
+
+  .slider {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .slide > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
+  .slides {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .slides > div {
+    padding: 2px;
+    border: 1px solid #3fa2f7;
+    margin: 20px auto;
+    background: none;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    transform: translate3d(-50%, -40%);
+    transition: 0.5s;
+    border-radius: 1rem;
+  }
+
+  .slider > a {
+    display: inline-flex;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: #3fa2f7;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    top: -40px;
+  }
+
+  .slider > a:active {
+    bottom: 0;
+  }
+
+  .slider > a:hover {
+    background-color: #fff;
+  }
+
+  .slider > a:focus {
+    background: #fff;
+  }
+
+  .icon__title {
+    display: none;
+  }
+
+  .song-container {
+    width: 30%;
+  }
+
+  .music__content {
+    margin: 0 auto;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
+    height: 10.5%;
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 2;
+    border: none;
+  }
+
+  #musicControl {
+    width: 30%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  #musicControl > img {
+    height: 18px;
+    margin: 0 10px;
+  }
+
+  #musicControl > #playButton {
+    height: 22px;
+  }
+
+  #musicContent {
+    display: flex;
+    color: #fff;
+  }
+
+  #musicContent > img {
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #musicContent__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  #musicContent__text > h3 {
+    font-size: 10px;
+  }
+
+  #musicContent__text > p {
+    font-size: 8px;
+    font-weight: bold;
+  }
+
+  #musicTime {
+    font-size: 8px;
+    color: white;
+    font-weight: bold;
+    padding: 0 10px;
+  }
 }

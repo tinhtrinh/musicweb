@@ -9,7 +9,6 @@
 body {
   background: #333333;
   width: 100%;
-  margin: auto;
 }
 
 .btn {
@@ -51,71 +50,68 @@ p {
 
 /*------------- App Submenu Bar Navigation -----------------------------*/
 #header {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    background-color: #000000;
-    padding: 20px;
-    margin-bottom: 20px;
-    position: fixed;
-    top: 0;
-    z-index: 9999;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #000000;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
 }
 
-
 .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  #logo__text {
-    font-size: 20px;
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  #logo__text:hover {
-    font-size: 22px;
-    text-decoration: none;
-    color:  #3fa2f7;
-  }
-  
-  .btn-wrapper {
-    display: flex;
-    align-items: center;
-  }
-  
-  .signIn-btn {
-    background-color: #ffffff;
-    color: #000000;
-    margin-right: 10px;
-    width: 100px;
-    font-size: 16px;
-  }
-  
-  .signIn-btn:hover {
-    background-color: #ffffff;
-    color: #000000;
-    height: 40px;
-    cursor: pointer;
-    font-size: 18px;
-  }
-  
-  .signUp-btn {
-    background-color: #3fa2f7;
-    margin-left: 10px;
-    width: 100px;
-    font-size: 16px;
-  }
-  
-  .signUp-btn:hover {
-    background-color: #3fa2f7;
-    height: 40px;
-    cursor: pointer;
-    font-size: 18px;
-  }
+  display: flex;
+  align-items: center;
+}
+
+#logo__text {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#logo__text:hover {
+  text-decoration: none;
+  color: #3fa2f7;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.signIn-btn {
+  background-color: #ffffff;
+  color: #000000;
+  margin-right: 10px;
+  width: 100px;
+  font-size: 16px;
+}
+
+.signIn-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.signUp-btn {
+  background-color: #3fa2f7;
+  margin-left: 10px;
+  width: 100px;
+  font-size: 16px;
+}
+
+.signUp-btn:hover {
+  background-color: #3fa2f7;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+}
 
 .ct-btn {
   position: absolute;
@@ -124,42 +120,42 @@ p {
 }
 
 .searchContainer {
-    display: grid;
-    grid-template-columns: 1.5rem 4fr 1fr;
-    width: 40%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .searchContainer:focus-within i {
-    display: none;
-  }
-  
-  .searchContainer:focus-within .searchBox {
-    grid-column: 1/4;
-  }
-  
-  .searchContainer:focus-within .searchBox::placeholder {
-    color: transparent;
-  }
-  
-  .s-icon {
-    padding: 0.5rem;
-    grid-row: 1;
-    grid-column: 1/2;
-    z-index: 2;
-    color: #000;
-    background-color: white;
-  }
-  
-  .searchBox {
-    border: 0;
-    padding: 0.5rem;
-    grid-column: 2/4;
-    grid-row: 1;
-    outline: none;
-  }
+  display: grid;
+  grid-template-columns: 1.5rem 4fr 1fr;
+  width: 40%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.searchContainer:focus-within i {
+  display: none;
+}
+
+.searchContainer:focus-within .searchBox {
+  grid-column: 1/4;
+}
+
+.searchContainer:focus-within .searchBox::placeholder {
+  color: transparent;
+}
+
+.s-icon {
+  padding: 0.5rem;
+  grid-row: 1;
+  grid-column: 1/2;
+  z-index: 2;
+  color: #000;
+  background-color: white;
+}
+
+.searchBox {
+  border: 0;
+  padding: 0.5rem;
+  grid-column: 2/4;
+  grid-row: 1;
+  outline: none;
+}
 
 .mobile-nav-icon {
   font-size: 200%;
@@ -171,31 +167,32 @@ p {
 }
 
 /*--------------main----------------------------------------*/
-main {
+#container {
+  margin-top: 4rem;
   display: flex;
   flex-direction: row;
-  position: absolute;
-  top: 9%;
 }
 
 .home-content {
-  width: 1090px;
-  margin-left: 345px;
-  margin-top: 40px;
+  width: 100%;
+  margin-left: 300px;
+  margin-top: 20px;
 }
 
 .side-bar {
-    margin-top: 20px;
-  width: 20%;
+  margin-top: 20px;
+  width: 18%;
   background: rgba(0, 0, 0, 0.75);
   position: fixed;
   z-index: 1;
 }
 
 .side-item {
+  padding: 1rem;
   list-style: none;
   height: 51px;
-  padding: 7px 20px 7px 25px;
+  display: flex;
+  align-items: center;
 }
 
 .side-item:hover {
@@ -207,15 +204,20 @@ a:focus .side-item {
 }
 
 .slider {
-  width: 93%;
+  width: 100%;
   height: fit-content;
   text-align: center;
   overflow: hidden;
-  margin-left: 2.5rem;
-  margin-bottom: -1rem;
+  border-radius: 2rem;
+  margin: 0 auto;
 }
+
+.slide {
+  margin: 0 auto;
+}
+
 .slide > img {
-  width: 100%;
+  width: 80%;
   height: 100%;
   border-radius: 2rem;
 }
@@ -240,16 +242,13 @@ a:focus .side-item {
 }
 
 .slides > div {
+  border-radius: 2rem;
   scroll-snap-align: start;
   flex-shrink: 0;
   width: 100%;
   height: 300px;
   margin-right: 50px;
   border-radius: 10px;
-  background: #eee;
-
-  position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -293,7 +292,7 @@ a:focus .side-item {
 }
 
 .slider > a:hover {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .slider > a:focus {
@@ -304,10 +303,15 @@ a:focus .side-item {
   list-style: none;
 }
 
+#music-list {
+  width: fit-content;
+  height: fit-content;
+}
+
 .song-container {
   list-style: none;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 200px;
   background-color: rgba(255, 255, 255, 0.2);
   text-align: center;
   padding-top: 8px;
@@ -349,6 +353,7 @@ footer {
   justify-content: space-between;
   z-index: 2;
   border: none;
+  height: 80px;
 }
 
 #musicControl {
@@ -369,8 +374,10 @@ footer {
 }
 
 #musicContent {
+  width: 30%;
   display: flex;
   color: #fff;
+  align-items: center;
 }
 
 #musicContent > img {
